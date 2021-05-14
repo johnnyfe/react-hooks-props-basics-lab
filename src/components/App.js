@@ -8,11 +8,11 @@ import user from "../data/user";
 console.log(user);
 
 function App() {
-  return (
+    return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home username={user.name} color={user.color} city={user.city}/>
+      <About bio={user.bio} links={user.links}/>
     </div>
   );
 }
